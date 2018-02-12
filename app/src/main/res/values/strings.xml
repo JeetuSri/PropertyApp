@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PropertyApp</string>
+    <string name="headerformap">Google Map</string>
+    <string name="title_registration">Registration</string>
+    <string name="title_listview">ListView</string>
+    <string name="title_mapview">MapView</string>
+    <string name="edit_name">Enter Username</string>
+    <string name="edit_pass">Enter Password</string>
+    <string name="Rs">\u20B9</string>
+    <string name="title_activity_navigation_mapview">Map</string>
+    <string name="scrCompat">drawable/ic_image_black_24dp.xml</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+</resources>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rsb="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/filter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.Trasperanrant"
+    tools:context="com.example.a10389.propertyapp.Filter">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rangeSeekbar"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="34dp"
+        android:text="Price"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar
+        android:id="@+id/rangeSeekbar"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_below="@+id/rangeSeekbar"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:text="Width"
+        tools:ignore="HardcodedText" />
+
+    <com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar
+        android:id="@+id/rangeSeekbar1"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rangeSeekbar"
+        android:layout_alignStart="@+id/rangeSeekbar"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/rangeSeekbar1"
+        android:layout_marginTop="20dp"
+        android:text="Height"
+        tools:ignore="HardcodedText" />
+
+
+    <com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar
+        android:id="@+id/rangeSeekbar2"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rangeSeekbar1"
+        android:layout_alignStart="@+id/rangeSeekbar1"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="370dp"
+        android:background="@drawable/roundbutton"
+        android:onClick="Reset()"
+        android:text="Reset"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="370dp"
+        android:background="@drawable/roundbutton"
+        android:onClick="Rang()"
+        android:text="Submit"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="34dp"
+        android:layout_toRightOf="@+id/textView"
+        android:text="Minvalue" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_toRightOf="@+id/textView4"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="40dp"
+        android:text="Maxvalue" />
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="150dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="Minvalue" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="40dp"
+        android:text="Maxvalue" />
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="260dp"
+        android:layout_toRightOf="@+id/textView3"
+        android:text="Minvalue" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="40dp"
+        android:text="Maxvalue" />
+
+</RelativeLayout>

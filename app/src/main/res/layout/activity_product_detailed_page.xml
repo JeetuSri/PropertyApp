@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    android:nestedScrollingEnabled="true"
+    android:orientation="horizontal"
+    android:scrollbars="horizontal"
+    tools:isScrollContainer="true"
+    tools:nestedScrollingEnabled="true"
+    tools:targetApi="lollipop"
+    android:id="@+id/productDetailPage"
+    android:theme="@style/custom"
+    tools:context=".ProductDetailedPage">
+
+        app:titleTextColor="@android:color/background_light" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp">
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_marginTop="6dp"
+                 android:layout_marginLeft="6dp"
+                 android:layout_marginRight="6dp">
+
+                <com.daimajia.slider.library.SliderLayout
+                    android:id="@+id/prodimage"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@android:drawable/sym_def_app_icon"
+                    />
+
+                <TextView
+                    android:id="@+id/prodBrandName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prodimage"
+                    android:textColor="@android:color/black"
+                    android:paddingLeft="50dp"
+                    android:textSize="18sp"
+                    android:paddingTop="6dp"
+                    android:textStyle="bold"
+                     />
+
+                <TextView
+                    android:id="@+id/prodModelName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="4dp"
+                    android:paddingTop="6dp"
+                    android:layout_below="@+id/prodimage"
+                    android:layout_toRightOf="@+id/prodBrandName" />
+    
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="250dp"
+                    android:layout_height="1dp"
+                    android:paddingTop="18dp"
+                    android:layout_below="@+id/prodBrandName"
+                    android:layout_centerHorizontal="true"
+                    android:background="#5D5555"/>
+         <TextView
+             android:id="@+id/prodLocationLabel"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@android:color/holo_red_light"
+             android:textSize="14sp"
+             android:text="Location :"
+             android:paddingLeft="60dp"
+             android:paddingTop="10dp"
+             android:layout_below="@+id/line"
+             />
+         <TextView
+             android:id="@+id/prodLocation"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@android:color/holo_blue_dark"
+             android:textSize="14sp"
+             android:paddingLeft="150dp"
+             android:paddingTop="10dp"
+             android:layout_below="@+id/line"
+             />
+         <TextView
+             android:id="@+id/prodPriceLabel"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@android:color/holo_red_light"
+             android:textSize="14sp"
+             android:text="Price :"
+             android:paddingLeft="60dp"
+             android:paddingTop="10dp"
+             android:layout_below="@+id/prodLocationLabel"
+              />
+         <TextView
+             android:id="@+id/prodPrice"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@android:color/holo_blue_dark"
+             android:textSize="14sp"
+             android:paddingLeft="150dp"
+             android:paddingTop="10dp"
+             android:layout_below="@+id/prodLocationLabel"
+              />
+         <TextView
+             android:id="@+id/prodWidthLabel"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@android:color/holo_red_light"
+             android:textSize="14sp"
+             android:text="Width :"
+             android:paddingLeft="60dp"
+             android:paddingTop="10dp"
+             android:layout_below="@+id/prodPriceLabel"
+              />
+         <TextView
+             android:id="@+id/prodWidth"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@android:color/holo_blue_dark"
+             android:textSize="14sp"
+             android:paddingLeft="150dp"
+             android:paddingTop="10dp"
+             android:layout_below="@+id/prodPrice"
+              />
+         <TextView
+             android:id="@+id/prodHeightLabel"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@android:color/holo_red_light"
+             android:textSize="14sp"
+             android:text="Height :"
+             android:paddingLeft="60dp"
+             android:paddingTop="10dp"
+             android:layout_below="@+id/prodWidthLabel"
+             />
+         <TextView
+             android:id="@+id/prodHeight"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@android:color/holo_blue_dark"
+             android:textSize="14sp"
+             android:paddingLeft="150dp"
+             android:paddingTop="10dp"
+             android:layout_below="@+id/prodWidth"
+              />
+         <TextView
+             android:id="@+id/prodLatitudeLabel"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@android:color/holo_red_light"
+             android:textSize="14sp"
+             android:text="Latitude :"
+             android:paddingLeft="60dp"
+             android:paddingTop="10dp"
+             android:layout_below="@+id/prodHeightLabel"
+             />
+         <TextView
+             android:id="@+id/prodLatitude"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@android:color/holo_blue_dark"
+             android:textSize="14sp"
+             android:paddingLeft="150dp"
+             android:paddingTop="10dp"
+             android:layout_below="@+id/prodHeight"
+              />
+         <TextView
+             android:id="@+id/prodLongitudeLabel"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@android:color/holo_red_light"
+             android:textSize="14sp"
+             android:text="Longitude :"
+             android:paddingLeft="60dp"
+             android:paddingTop="10dp"
+             android:layout_below="@+id/prodLatitudeLabel"
+             />
+         <TextView
+             android:id="@+id/prodLongitude"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@android:color/holo_blue_dark"
+             android:textSize="14sp"
+             android:paddingLeft="150dp"
+             android:paddingTop="10dp"
+             android:layout_below="@+id/prodLatitude"
+              />
+           <Button
+               android:id="@+id/editbutton"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/prodLongitude"
+               android:text="Edit"
+               android:textAlignment="center"
+               android:textSize="24dp"
+               android:textColor="#000000"
+               />
+
+     </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    </ScrollView>
+</RelativeLayout>
+
+

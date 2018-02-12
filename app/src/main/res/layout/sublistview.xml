@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:padding="6dp"
+            android:paddingLeft="10dp"
+            app:srcCompat="@android:drawable/sym_def_app_icon" />
+            <TextView
+                android:id="@+id/brandName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image"
+                android:paddingLeft="3dp"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black" />
+
+
+            <TextView
+                android:id="@+id/modelName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/brandName"
+                android:paddingLeft="3dp"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/priceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:text="Price:"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:layout_below="@+id/brandName"
+                android:layout_toRightOf="@+id/image"/>
+            <TextView
+                android:id="@+id/pricesymbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:text="@string/Rs"
+                android:layout_below="@+id/brandName"
+                android:layout_toRightOf="@+id/priceLabel" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/brandName"
+                android:layout_toRightOf="@+id/pricesymbol" />
+            <TextView
+                android:id="@+id/widthLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/priceLabel"
+                android:layout_toRightOf="@+id/image"
+                android:text="Width:"
+                android:paddingLeft="3dp"
+                android:textSize="12dp"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/width"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:layout_toRightOf="@+id/widthLabel"
+                android:layout_below="@+id/priceLabel"/>
+            <TextView
+                android:id="@+id/heightLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/widthLabel"
+                android:layout_toRightOf="@+id/image"
+                android:text="Height:"
+                android:paddingLeft="3dp"
+                android:textSize="12dp"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/heightLabel"
+                android:paddingLeft="3dp"
+                android:layout_below="@+id/widthLabel"/>
+            <TextView
+                android:id="@+id/remarkLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heightLabel"
+                android:layout_toRightOf="@+id/image"
+                android:text="Remark:"
+                android:paddingLeft="3dp"
+                android:textSize="12dp"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:layout_below="@+id/heightLabel"
+                android:layout_toRightOf="@+id/remarkLabel" />
+            <ImageView
+                android:id="@+id/detailicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="30dp"
+                android:background="@android:color/background_light"
+                app:srcCompat="@drawable/ic_assignment_blue_24dp" />
+
+            <ImageView
+                android:id="@+id/deleteicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/detailicon"
+                android:background="@android:color/background_light"
+                android:paddingLeft="3dp"
+                app:srcCompat="@drawable/ic_delete_sweep_black_24dp" />
+
+</RelativeLayout>
